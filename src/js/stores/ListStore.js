@@ -27,3 +27,4 @@ const ListStore = ObjectAssign({}, EventEmitter.prototype, {
 });
 
 export default ListStore;
+

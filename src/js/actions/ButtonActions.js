@@ -1,10 +1,11 @@
-import AppDispatcher from '../dispatcher/AppDispatcher';
+import { creteStore } from 'redux';
+import listStore from '../stores/Store';
 
 class ButtonActions {
 
     addNewItem = function(text) {
-        AppDispatcher.dispatch({
-            actionType: 'ADD_NEW_ITEM',
+        return listStore({}).dispatch({
+            type: 'ADD_NEW_ITEM',
             text: text
         });
     };

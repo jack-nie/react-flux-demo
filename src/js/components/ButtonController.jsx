@@ -5,7 +5,12 @@ import ListStore from '../stores/ListStore';
 
 class ButtonController extends React.Component {
 
-  state = {items: ListStore.getAll()};
+  constructor() {
+    super();
+    this.state = {
+      items: ListStore.getAll()
+    }
+  }
 
   componentDidMount = (event) => {
     ListStore.addChangeListener(this._onChange);
