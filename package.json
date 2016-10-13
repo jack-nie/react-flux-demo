@@ -8,8 +8,8 @@
     "dev-server": "webpack-dev-server --progress --colors"
   },
   "repository": {
-    "type": "git",
-    "url": "git://github.com/jack-nie/react-demo.git"
+    "url": "git://github.com/jack-nie/react-demo.git",
+    "type": "git"
   },
   "keywords": [
     "react",
@@ -51,5 +51,6 @@
       "react",
       "stage-0"
     ]
-  }
+  },
+  "main": "index.js"
 }
